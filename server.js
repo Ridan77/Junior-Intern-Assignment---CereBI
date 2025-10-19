@@ -19,7 +19,7 @@ const shipments = JSON.parse(fs.readFileSync("./data.json", "utf8"))
 // Get all shipments (with optional filters)
 app.get("/api/shipments", (req, res) => {
   let data = [...shipments]
-  const { riskLevel, riskType, region} = req.query
+  const { riskLevel, riskType, region } = req.query
 
   if (riskLevel) data = data.filter(s => s.riskLevel === riskLevel)
   if (riskType) data = data.filter(s => s.riskType === riskType)

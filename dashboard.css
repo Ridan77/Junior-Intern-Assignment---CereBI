@@ -69,8 +69,8 @@ body {
   border-radius: 12px;
   padding: 10px 12px;
 }
-.input::placeholder{
-    color: var(--text);
+.input::placeholder {
+  color: var(--text);
 }
 .search-btn {
   padding: 10px 12px;
@@ -81,7 +81,6 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-
 
 /* Filters row */
 .filters {
@@ -170,12 +169,11 @@ body {
 .shipment-card {
   position: relative;
   overflow: hidden;
-     background-color: var(--card-bg);
+  background-color: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 16px 16px 12px;
- 
 }
 
 .shipment-card.low::before,
@@ -218,7 +216,6 @@ body {
   gap: 6px;
   align-items: center;
   background: var(--panel);
-  
 }
 .card-body {
   display: grid;
@@ -249,7 +246,7 @@ body {
   padding: 4px 10px;
   font-size: 12px;
   font-weight: 700;
-  color:white;
+  color: white;
 }
 .risk-low {
   background: var(--risk-low);

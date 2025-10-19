@@ -9,7 +9,7 @@ function isShipmentAtRisk(shipmentId) {
     const now = Date.now()
     const eta = new Date(shipment.ETA).getTime()
     const daysToETA = (eta - now) / (1000 * 60 * 60 * 24)
-     //  Logic 1: Stage Progress Rule 
+    //  Logic 1: Stage Progress Rule 
     // If delivery is close (<=3 days) and shipment still early in process
     const earlyStages = ["Processing", "Sorting Facility", "At Port"]
     const isLateProgress = daysToETA <= 3 && earlyStages.includes(shipment.currentStage)
